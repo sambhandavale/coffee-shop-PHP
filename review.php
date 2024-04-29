@@ -87,7 +87,7 @@ if(mysqli_num_rows($result_check_active_user) > 0) {
                         </li>
                     <?php endif; ?>
                     <li>
-                        <a href="./review" class="blog tab">
+                        <a href="./review.php" class="blog tab">
                             Reviews
                         </a>
                     </li>

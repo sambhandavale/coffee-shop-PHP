@@ -91,7 +91,7 @@ if(isset($_POST['submit'])) {
                     </li>
                 <?php endif; ?>
                 <li>
-                    <a href="#" class="blog tab">
+                    <a href="./review.php" class="blog tab">
                         Reviews
                     </a>
                 </li>

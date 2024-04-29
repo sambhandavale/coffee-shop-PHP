@@ -1,0 +1,7 @@
+1.Start the XAMPP Server
+2.Go to localhost , just type localhost in google 
+3.Then go to phpMyAdmin
+4.Create a database with name registrations, make sure to use same name
+5.In that database create a table with name users with 2 columns
+6.Column 1 name - username, Column 2 name - password
+Done!!

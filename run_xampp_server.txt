@@ -1,0 +1,7 @@
+1.Download XAMPP Server
+2.Go to control panel of xampp
+3.Start Apache and MySQL
+4.Go to C drive and search for XAMPP
+5.Then go in htdocs and paste this folder there
+6.Create the database
+7.Search localhost/wdl_project/home.php to go to home page

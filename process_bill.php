@@ -15,7 +15,7 @@ if (isset($_POST['selectedDrinks']) && isset($_POST['totalPrice'])) {
     $totalPrice = $_POST['totalPrice'];
 
     // Insert data into the bill table
-    $query_insert_bill = "INSERT INTO bill(username,drinks, amount) VALUES ('$username','$selectedDrinks', '$totalPrice')";
+    $query_insert_bill = "INSERT INTO bill(username,drinks, amount,cancel_bt) VALUES ('$username','$selectedDrinks', '$totalPrice',1)";
     $result_insert_bill = mysqli_query($con2, $query_insert_bill);
 
     if ($result_insert_bill) {

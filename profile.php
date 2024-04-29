@@ -211,17 +211,33 @@ if(isset($_POST['submit'])) {
                     }
                 ?>
                 <?php
-                    if (mysqli_num_rows($result_bill) > 0) {
+                $query_bill = "SELECT cancel_bt FROM bill WHERE username = '$username'";
+                $result_bill = mysqli_query($con2, $query_bill);
+                if ($result_bill) {
+                    $row = mysqli_fetch_assoc($result_bill);
+                    if ($row && $row['cancel_bt'] == 1) {
                 ?>
                 <form class="cancel_order" action="#" method="post">
                     <button class="bt_cancel_order" name="submit">Cancel Order</button>
                 </form>
                 <?php
-                    }
+                    }}
                 ?>
             </div>
         </div>
     </div>
 </div>
+<script>
+    setTimeout(function() {
+        var cancelButton = document.querySelector('.bt_cancel_order');
+        if (cancelButton) {
+            cancelButton.style.display = 'none';
+            <?php
+                $query_update_cancel_bt = "UPDATE bill SET cancel_bt = 0 WHERE username = '$username'";
+                $result_update_cancel_bt = mysqli_query($con2, $query_update_cancel_bt);
+            ?>
+        }
+    }, 20000);
+</script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+.logout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.logout button{
+    width: 200px;
+    height: 40px;
+    background-color: var(--link-hover-color);
+    color: var(--menu-font-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+}
+
+.logout button:hover{
+    cursor: pointer;
+}

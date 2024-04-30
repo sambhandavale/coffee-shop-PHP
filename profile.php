@@ -153,7 +153,7 @@ if(isset($_POST['submit'])) {
                                     </li>
                                     <li class="item">
                                         <a class="item-title" href="./signin.php">
-                                            <h3>Sign-in</h3>
+                                            <h3>Signup</h3>
                                         </a>
                                     </li>
                                 </ul>
